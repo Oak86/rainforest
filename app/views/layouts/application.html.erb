@@ -7,12 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <div id="header"> 
 	<h1>Rainforest.Com</h1>
 	<h2>It's Amazon.Com... without all the money.</h2>
 </div>
 
+<% if flash[:notice] %>
+	<p id="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<% if flash[:alert] %>
+	<p id="alert"><%= flash[:alert] %></p>
+<% end %>
 
 <%= yield %>
 
