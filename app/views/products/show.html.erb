@@ -13,7 +13,7 @@
       <div id = 'reviewpost'> 
         <p><%= review.comment %></p>
         <% if review.user != nil %>
-          <p>By: <%= review.user.email %></p>
+          <p>By: <%= review.user.name %></p>
           <p>Added: <%= review.created_at %></p>
         <% end %>
       </div>
